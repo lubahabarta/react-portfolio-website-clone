@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=M+PLUS+Rounded+1c:wght@500&family=Open+Sans&display=swap');
+
+:root {
+    --dark-mode-bg-color: #202023;
+    --dark-mode-font-color: #eeeeee;
+
+    --light-mode-bg-color: #cccccc;
+    --light-mode-font-color: #000000;
+
+    --heading-font: 'M PLUS Rounded 1c';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-mode-bg-color);
+    color: var(--dark-mode-font-color);
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
