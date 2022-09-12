@@ -1,0 +1,47 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    max-width: 60ch;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 1.2rem;
+}
+
+/* HELLO */
+section.hello {
+    width: 100%;
+
+    padding: 0.7rem;
+
+    text-align: center;
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+}
+
+/* WHO */
+section.who>.me-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+section.who>.me-image>img {
+    width: 6rem;
+    border-radius: 6rem;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+/* WORK */
+section.work>p {
+    text-align: justify;
+    text-indent: 1rem;
+}
