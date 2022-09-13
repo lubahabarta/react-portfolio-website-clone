@@ -1,10 +1,12 @@
 .nav-bar {
     background-color: red;
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 .wrap {
@@ -16,7 +18,23 @@
 }
 
 .nav-bar-left {
-    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-left h1 {
+    display: flex;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+}
+
+.nav-bar-left svg {
+    width: 1.3rem;
+    height: 1.3rem;
+    position: relative;
+    top: 0.2rem;
+    fill: white;
+    margin-right: 0.1rem;
 }
 
 .nav-bar-center {
@@ -24,19 +42,48 @@
 }
 
 .nav-bar-right {
-    flex: 1;
-    text-align: end;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.nav-bar svg {
-    width: 1.3rem;
-    height: 1.3rem;
-    background-color: white;
-    position: relative;
-    top: 0.33rem
+.nav-bar-right>button {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    margin-left: 0.5rem;
+
+    border: 0;
+    border-radius: 0.38rem;
+    cursor: pointer;
 }
 
-.nav-bar h1 {
-    font-size: 1.1rem;
-    line-height: 1.58rem;
+.light {
+    background-color: #fbd38b;
+}
+
+.light:hover,
+.light:active {
+    background-color: #f6ad55;
+    transition: 200ms;
+}
+
+.light:not(:hover) {
+    background-color: #fbd38b;
+    transition: 200ms;
+}
+
+.light svg {
+    scale: 0.5;
+    stroke: var(--dark-mode-bg-color);
+    /* fill: var(--dark-mode-bg-color); */
+}
+
+.dark {
+    background-color: #805ad5;
+}
+
+.dark svg {
+    scale: 0.4;
+    stroke: none;
+    fill: white;
 }

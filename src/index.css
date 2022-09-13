@@ -3,9 +3,11 @@
 :root {
     --dark-mode-bg-color: #202023;
     --dark-mode-font-color: #eeeeee;
+    --dark-mode-nav-color: #20202380;
 
-    --light-mode-bg-color: #cccccc;
-    --light-mode-font-color: #000000;
+    --light-mode-bg-color: #f0e7db;
+    --light-mode-font-color: #1a202c;
+    --light-mode-nav-color: rgba(255, 255, 255, 0.25);
 
     --heading-font: 'M PLUS Rounded 1c';
 }
