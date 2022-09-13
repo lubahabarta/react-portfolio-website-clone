@@ -43,3 +43,16 @@ h3 {
 p {
     line-height: 1.5;
 }
+
+a {
+    cursor: pointer;
+    color: #ff63c3;
+    text-decoration: none;
+
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+}

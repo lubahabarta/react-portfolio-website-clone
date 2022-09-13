@@ -1,7 +1,4 @@
 .main {
-    width: 100vw;
-    height: 100vh;
-
     display: flex;
     justify-content: center;
 }
@@ -13,6 +10,41 @@ article {
 
 section {
     margin-bottom: 1.2rem;
+}
+
+.article-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.article-button>a {
+    background-color: #81e6d9;
+    color: var(--dark-mode-bg-color);
+    font-weight: 600;
+
+    padding: 0.55rem 1rem;
+
+    border-radius: 0.38rem;
+}
+
+.article-button>a:hover,
+.article-button>a:active {
+    text-decoration: none;
+}
+
+.article-button>a:hover {
+    background-color: #4fd1c5;
+    transition: 200ms;
+}
+
+.article-button>a:active {
+    background-color: #46b9ae;
+    transition: 200ms;
+}
+
+.article-button>a>span {
+    margin-left: 0.7rem;
 }
 
 /* HELLO */
@@ -35,7 +67,7 @@ section.who>.me-image {
 }
 
 section.who>.me-image>img {
-    width: 6rem;
+    width: 6.3rem;
     border-radius: 6rem;
     border: 2px solid rgba(255, 255, 255, 0.8);
 }
@@ -44,4 +76,54 @@ section.who>.me-image>img {
 section.work>p {
     text-align: justify;
     text-indent: 1rem;
+}
+
+/* BIO */
+section.bio>p {
+    margin-left: 3.3rem;
+    text-indent: -3.3rem;
+}
+
+section.bio>p>span {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+/* HOBBY */
+section.hobby>p {
+    text-align: justify;
+    text-indent: 1rem;
+}
+
+/* ON THE WEB */
+section.on-the-web ul {
+    list-style-type: none;
+}
+
+section.on-the-web a {
+    display: inline-flex;
+    align-items: center;
+    color: #81e6d9;
+    font-weight: 600;
+
+    padding: 0.55rem 1rem;
+
+    border-radius: 0.38rem;
+}
+
+section.on-the-web a:hover {
+    text-decoration: none;
+    background-color: rgba(129, 230, 217, 0.12);
+    transition: background-color 200ms;
+}
+
+section.on-the-web a:not(:hover) {
+    transition: background-color 200ms;
+}
+
+section.on-the-web svg {
+    width: 16px;
+    height: 16px;
+    fill: #81e6d9;
+    margin-right: 0.5rem;
 }
