@@ -1,5 +1,5 @@
 .nav-bar {
-    background-color: red;
+    background-color: var(--nav-color);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@
     height: 1.3rem;
     position: relative;
     top: 0.2rem;
-    fill: white;
+    fill: var(--font-color);
     margin-right: 0.1rem;
 }
 
@@ -52,12 +52,12 @@
 
     margin-left: 0.5rem;
 
-    border: 0;
     border-radius: 0.38rem;
     cursor: pointer;
 }
 
 .light {
+    border: 0;
     background-color: #fbd38b;
 }
 
@@ -74,16 +74,39 @@
 
 .light svg {
     scale: 0.5;
-    stroke: var(--dark-mode-bg-color);
+    stroke: var(--bg-color);
     /* fill: var(--dark-mode-bg-color); */
 }
 
 .dark {
+    border: 0;
     background-color: #805ad5;
+}
+
+.dark:hover,
+.dark:active {
+    background-color: #6b46c1;
+    transition: 200ms;
+}
+
+.dark:not(:hover) {
+    background-color: #805ad5;
+    transition: 200ms;
 }
 
 .dark svg {
     scale: 0.4;
     stroke: none;
-    fill: white;
+    fill: var(--bg-color);
+}
+
+.menu {
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.menu svg {
+    scale: 0.4;
+    fill: var(--font-color);
+    stroke: var(--font-color);
 }

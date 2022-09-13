@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=M+PLUS+Rounded+1c:wght@500&family=Open+Sans&display=swap');
 
 :root {
+    --bg-color: var(--dark-mode-bg-color);
+    --font-color: var(--dark-mode-font-color);
+    --nav-color: var(--dark-mode-nav-color);
+
     --dark-mode-bg-color: #202023;
     --dark-mode-font-color: #eeeeee;
     --dark-mode-nav-color: #20202380;
@@ -19,8 +23,8 @@
 }
 
 body {
-    background-color: var(--dark-mode-bg-color);
-    color: var(--dark-mode-font-color);
+    background-color: var(--bg-color);
+    color: var(--font-color);
 
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
