@@ -25,7 +25,9 @@
 
 .nav-bar-left h1 {
     display: flex;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    cursor: pointer;
+
     margin-left: 0.5rem;
 }
 
@@ -33,13 +35,35 @@
     width: 1.3rem;
     height: 1.3rem;
     position: relative;
-    top: 0.2rem;
+    top: 0.15rem;
     fill: var(--font-color);
     margin-right: 0.1rem;
 }
 
 .nav-bar-center {
     display: none;
+}
+
+.nav-bar-center ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-bar-center li {
+    margin: 0 0.7rem;
+}
+
+.nav-bar-center a {
+    color: var(--font-color);
+}
+
+.nav-bar-center svg {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    position: relative;
+    top: 0.5px;
+    fill: var(--font-color);
 }
 
 .nav-bar-right {
@@ -117,4 +141,26 @@
     transform: scale(0.4);
     fill: var(--font-color);
     stroke: var(--font-color);
+}
+
+
+
+@media screen and (min-width: 765px) {
+    .nav-bar-left {
+        flex: 2;
+    }
+
+    .nav-bar-center {
+        flex: 3;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-bar-right {
+        flex: 2;
+    }
+
+    .menu {
+        display: none;
+    }
 }
