@@ -4,14 +4,35 @@
     --bg-color: var(--dark-mode-bg-color);
     --font-color: var(--dark-mode-font-color);
     --nav-color: var(--dark-mode-nav-color);
+    --menu-border-color: var(--dark-mode-menu-border-color);
+    --menu-hover-color: var(--dark-mode-menu-hover-color);
+    --link-color: var(--dark-mode-link-color);
+    --weblink-hover-color: var(--dark-mode-weblink-hover-color);
+    --hello-color: var(--dark-mode-hello-color);
+    --cyan-color: var(--dark-mode-cyan-color);
+    --cyan-darker-color: var(--dark-mode-cyan-darker-color);
 
     --dark-mode-bg-color: #202023;
     --dark-mode-font-color: #eeeeee;
     --dark-mode-nav-color: #20202380;
+    --dark-mode-menu-border-color: rgba(255, 255, 255, 0.2);
+    --dark-mode-menu-hover-color: rgba(255, 255, 255, 0.09);
+    --dark-mode-link-color: #ff63c3;
+    --dark-mode-weblink-hover-color: rgba(129, 230, 217, 0.12);
+    --dark-mode-hello-color: rgba(255, 255, 255, 0.09);
+    --dark-mode-cyan-color: #81e6d9;
+    --dark-mode-cyan-darker-color: #4fd1c5;
 
     --light-mode-bg-color: #f0e7db;
     --light-mode-font-color: #1a202c;
     --light-mode-nav-color: rgba(255, 255, 255, 0.25);
+    --light-mode-menu-border-color: #e2e8f0;
+    --light-mode-menu-hover-color: #edf2f7;
+    --light-mode-link-color: rgb(61, 122, 237);
+    --light-mode-weblink-hover-color: #2c7a7c;
+    --light-mode-hello-color: rgba(255, 255, 255, 0.36);
+    --light-mode-cyan-color: #319795;
+    --light-mode-cyan-darker-color: #2c7a7b;
 
     --heading-font: 'M PLUS Rounded 1c';
 }
@@ -56,7 +77,7 @@ p {
 
 a {
     cursor: pointer;
-    color: #ff63c3;
+    color: var(--link-color);
     text-decoration: none;
 
 }

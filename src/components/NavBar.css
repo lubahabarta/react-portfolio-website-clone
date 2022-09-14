@@ -11,6 +11,7 @@
 
 .wrap {
     width: 100vw;
+    max-width: 765px;
     display: flex;
     justify-content: space-between;
 
@@ -68,14 +69,12 @@
 }
 
 .light:not(:hover) {
-    background-color: #fbd38b;
     transition: 200ms;
 }
 
 .light svg {
-    scale: 0.5;
+    transform: scale(0.5);
     stroke: var(--bg-color);
-    /* fill: var(--dark-mode-bg-color); */
 }
 
 .dark {
@@ -90,23 +89,32 @@
 }
 
 .dark:not(:hover) {
-    background-color: #805ad5;
     transition: 200ms;
 }
 
 .dark svg {
-    scale: 0.4;
+    transform: scale(0.4);
     stroke: none;
     fill: var(--bg-color);
 }
 
 .menu {
     background-color: inherit;
-    border: 1px solid rgba(255, 255, 255, 0.09);
+    border: 1px solid var(--menu-border-color);
+}
+
+.menu:hover,
+.menu:active {
+    background-color: var(--menu-hover-color);
+    transition: 200ms;
+}
+
+.menu:not(:hover) {
+    transition: 200ms;
 }
 
 .menu svg {
-    scale: 0.4;
+    transform: scale(0.4);
     fill: var(--font-color);
     stroke: var(--font-color);
 }

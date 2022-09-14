@@ -21,8 +21,8 @@ section {
 }
 
 .article-button>a {
-    background-color: #81e6d9;
-    color: var(--dark-mode-bg-color);
+    background-color: var(--cyan-color);
+    color: var(--bg-color);
     font-weight: 600;
 
     padding: 0.55rem 1rem;
@@ -36,12 +36,16 @@ section {
 }
 
 .article-button>a:hover {
-    background-color: #4fd1c5;
+    background-color: var(--cyan-darker-color);
     transition: 200ms;
 }
 
 .article-button>a:active {
-    background-color: #46b9ae;
+    background-color: var(--cyan-darker-color);
+    transition: 200ms;
+}
+
+.article-button>a:not(:hover) {
     transition: 200ms;
 }
 
@@ -56,7 +60,7 @@ section.hello {
     padding: 0.7rem;
 
     text-align: center;
-    background: rgba(255, 255, 255, 0.09);
+    background: var(--hello-color);
     backdrop-filter: blur(10px);
     border-radius: 0.5rem;
 }
@@ -105,7 +109,7 @@ section.on-the-web ul {
 section.on-the-web a {
     display: inline-flex;
     align-items: center;
-    color: #81e6d9;
+    color: var(--cyan-darker-color);
     font-weight: 600;
 
     padding: 0.55rem 1rem;
@@ -115,7 +119,7 @@ section.on-the-web a {
 
 section.on-the-web a:hover {
     text-decoration: none;
-    background-color: rgba(129, 230, 217, 0.12);
+    background-color: var(--weblink-hover-color);
     transition: background-color 200ms;
 }
 
@@ -126,6 +130,6 @@ section.on-the-web a:not(:hover) {
 section.on-the-web svg {
     width: 16px;
     height: 16px;
-    fill: #81e6d9;
+    fill: var(--cyan-darker-color);
     margin-right: 0.5rem;
 }
