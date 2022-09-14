@@ -1,7 +1,38 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './NavBar.css'
 
-function NavBar( { dark, setDark } ) {
+function NavBar() {
+    const [dark, setDark] = useState(true);
+    const [hiddenMenu, setHiddenMenu] = useState(false);
+
+    useEffect(() => {
+        const style = document.documentElement.style;
+
+        if (!dark) {
+            style.setProperty('--bg-color', 'var(--light-mode-bg-color)');
+            style.setProperty('--font-color', 'var(--light-mode-font-color)');
+            style.setProperty('--nav-color', 'var(--light-mode-nav-color)');
+            style.setProperty('--menu-border-color', 'var(--light-mode-menu-border-color)');
+            style.setProperty('--menu-hover-color', 'var(--light-mode-menu-hover-color)');
+            style.setProperty('--link-color', 'var(--light-mode-link-color)');
+            style.setProperty('--weblink-hover-color', 'var(--light-mode-weblink-hover-color)');
+            style.setProperty('--hello-color', 'var(--light-mode-hello-color)');
+            style.setProperty('--cyan-color', 'var(--light-mode-cyan-color)');
+            style.setProperty('--cyan-darker-color', 'var(--light-mode-cyan-darker-color)');
+        } else {
+            style.setProperty('--bg-color', 'var(--dark-mode-bg-color)');
+            style.setProperty('--font-color', 'var(--dark-mode-font-color)');
+            style.setProperty('--nav-color', 'var(--dark-mode-nav-color)');
+            style.setProperty('--menu-border-color', 'var(--dark-mode-menu-border-color)');
+            style.setProperty('--menu-hover-color', 'var(--dark-mode-menu-hover-color)');
+            style.setProperty('--link-color', 'var(--dark-mode-link-color)');
+            style.setProperty('--weblink-hover-color', 'var(--dark-mode-weblink-hover-color)');
+            style.setProperty('--hello-color', 'var(--dark-mode-hello-color)');
+            style.setProperty('--cyan-color', 'var(--dark-mode-cyan-color)');
+            style.setProperty('--cyan-darker-color', 'var(--dark-mode-cyan-darker-color)');
+        }
+    }, [dark]);
+    
     return (
         <div className='nav-bar'>
             <div className='wrap'>
@@ -36,7 +67,7 @@ function NavBar( { dark, setDark } ) {
                             </svg>
                         </button>
                     ) : (
-                        <button className='dark' onClick={() => {setDark(true)}}>
+                        <button className='dark' onClick={() => setDark(true)}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                             </svg>
@@ -44,7 +75,7 @@ function NavBar( { dark, setDark } ) {
                     ) }
                     
                     
-                    <button className='menu'>
+                    <button className='menu' onClick={() => setHiddenMenu(state => !state)}>
                         <svg class="svg-icon" viewBox="0 0 20 20">
 						    <path d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
 								c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
@@ -53,6 +84,22 @@ function NavBar( { dark, setDark } ) {
 						</svg>
                     </button>
                 </div>
+
+                {hiddenMenu && (
+                    <div className='hidden-menu'>
+                        <ul>
+                            <li>
+                                <a href="#" onClick={() => setHiddenMenu(state => !state)}>About</a>
+                            </li>
+                            <li>
+                                <a href="#" onClick={() => setHiddenMenu(state => !state)}>Works</a>
+                            </li>
+                            <li>
+                                <a href="#" onClick={() => setHiddenMenu(state => !state)}>View Source</a>
+                            </li>
+                        </ul>
+                    </div>
+                )}
             </div>
         </div>
     )

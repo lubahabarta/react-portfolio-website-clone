@@ -28,14 +28,14 @@
     font-size: 1.05rem;
     cursor: pointer;
 
-    margin-left: 0.5rem;
+    margin-left: 0.7rem;
 }
 
 .nav-bar-left svg {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.2rem;
+    height: 1.2rem;
     position: relative;
-    top: 0.15rem;
+    top: 0.2rem;
     fill: var(--font-color);
     margin-right: 0.1rem;
 }
@@ -143,6 +143,34 @@
     stroke: var(--font-color);
 }
 
+.hidden-menu {
+    width: 11.5rem;
+    padding: 0.5rem 0;
+
+    position: absolute;
+    top: 3.5rem;
+    right: 0.5rem;
+
+    background-color: #2d3748;
+    border: 1px solid var(--menu-border-color);
+    border-radius: 0.38rem;
+}
+
+.hidden-menu ul {
+    list-style-type: none;
+}
+
+.hidden-menu a {
+    display: block;
+    color: var(--font-color);
+    padding: 0.5rem 0.8rem;
+}
+
+.hidden-menu a:hover,
+.hidden-menu a:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
 
 
 @media screen and (min-width: 765px) {
@@ -161,6 +189,10 @@
     }
 
     .menu {
+        display: none;
+    }
+
+    .hidden-menu {
         display: none;
     }
 }
