@@ -2,10 +2,20 @@
     display: flex;
     justify-content: center;
 
-    padding-top: 17.6rem;
+    /* padding-top: 17.6rem; */
+}
+
+.vanta {
+    position: fixed;
+    width: 80ch;
+    top: 0rem;
+    z-index: -999;
+    height: 17rem;
 }
 
 article {
+    position: relative;
+    top: 17.6rem;
     max-width: 60ch;
     padding: 0 1rem;
 }
