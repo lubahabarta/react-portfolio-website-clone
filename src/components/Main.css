@@ -3,18 +3,10 @@
     justify-content: center;
 }
 
-main {
-    position: relative;
-    max-width: 60ch;
-}
-
-.main-wrap {
-    padding: 0 1rem;
-}
-
 .art {
     display: flex;
     justify-content: center;
+    margin: 0.8rem 0;
 }
 
 .art img {
@@ -34,7 +26,7 @@ main {
 }
 
 article {
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 section {

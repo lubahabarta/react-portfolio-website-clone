@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import Footer from './Footer.js'
 //css
 import './Main.css'
+//images
 import me from '../images/Stuzkovani22.png'
 import art from '../images/art.svg'
 
