@@ -21,6 +21,10 @@ h3 {
     width: 100%;
 }
 
+.portfolio {
+    margin-bottom: 3rem;
+}
+
 .portfolio ul {
     display: grid;
     grid-template-columns: 1fr;
@@ -43,6 +47,12 @@ h3 {
 .portfolio a:hover,
 .portfolio a:active {
     text-decoration: none;
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+.portfolio a:not(:hover) {
+    transition: 200ms;
 }
 
 .portfolio img {

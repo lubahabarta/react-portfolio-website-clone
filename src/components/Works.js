@@ -4,6 +4,8 @@ import './Works.css'
 //images
 import art from '../images/art.svg'
 import img from '../images/test.png'
+//components
+import Footer from './Footer'
 
 const Works = () => {
     return (
@@ -56,6 +58,7 @@ const Works = () => {
 
                     </div>
                 </div>
+                <Footer />
             </main>
         </div>
     )

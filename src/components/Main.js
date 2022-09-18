@@ -6,6 +6,8 @@ import './Main.css'
 //images
 import me from '../images/Stuzkovani22.png'
 import art from '../images/art.svg'
+//link
+import { Link } from 'react-router-dom'
 
 function Main() {
 
@@ -39,9 +41,9 @@ function Main() {
                         <h3>Work</h3>
                         <p><a href="#">Takuya</a> is a freelance and a full-stack developer based in Osaka with a passion for building digital services/stuff he wants. He has a knack for all things launching products, from planning and designing all the way to solving real-life problems with code. When not online, he loves hanging out with his camera. Currently, he is living off of his own product called Inkdrop. He publishes content for marketing his products and his YouTube channel called "Dev as Life" has more than 100k subscribers.</p>
                         <div className="article-button">
-                            <a href="#">
+                            <Link to='/portfolio'>
                                 My portfolio<span>&gt;</span>
-                            </a>
+                            </Link>
                         </div>
                     </section>
 

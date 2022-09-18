@@ -23,6 +23,11 @@
     align-items: center;
 }
 
+.nav-bar-left a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
 .nav-bar-left h1 {
     display: flex;
     font-size: 1.05rem;
