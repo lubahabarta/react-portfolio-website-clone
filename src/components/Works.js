@@ -2,7 +2,7 @@ import React from 'react'
 //css
 import './Works.css'
 //images
-import art from '../images/art.svg'
+import art from '../images/artt.svg'
 import img from '../images/test.png'
 //components
 import Footer from './Footer'

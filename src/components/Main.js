@@ -5,7 +5,7 @@ import Footer from './Footer.js'
 import './Main.css'
 //images
 import me from '../images/Stuzkovani22.png'
-import art from '../images/art.svg'
+import art from '../images/artt.svg'
 //link
 import { Link } from 'react-router-dom'
 
