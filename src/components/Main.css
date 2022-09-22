@@ -11,6 +11,7 @@
 
 .art img {
     width: 100%;
+    z-index: -1;
 }
 
 .hello {
@@ -21,12 +22,18 @@
 
     text-align: center;
     background: var(--hello-color);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(6px);
     border-radius: 0.5rem;
+
+    position: relative;
+    top: -2.5rem;
 }
 
 article {
     padding: 0 2rem;
+
+    position: relative;
+    top: -2.5rem;
 }
 
 section {

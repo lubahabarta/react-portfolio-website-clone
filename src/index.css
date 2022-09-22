@@ -29,8 +29,8 @@
     --light-mode-menu-border-color: #e2e8f0;
     --light-mode-menu-hover-color: #edf2f7;
     --light-mode-link-color: rgb(61, 122, 237);
-    --light-mode-weblink-hover-color: #2c7a7c;
-    --light-mode-hello-color: rgba(255, 255, 255, 0.36);
+    --light-mode-weblink-hover-color: #e6fffa;
+    --light-mode-hello-color: rgba(255, 255, 255, 0.25);
     --light-mode-cyan-color: #319795;
     --light-mode-cyan-darker-color: #2c7a7b;
 
@@ -94,4 +94,30 @@ a:hover,
 a:active {
     text-decoration: underline;
     text-underline-offset: 0.2rem;
+}
+
+
+
+/* TRANSITIONS */
+.hello-transition-enter {
+    opacity: 0;
+    backdrop-filter: blur(6px);
+    transform: translateY(0.5rem);
+}
+
+.hello-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.content-transition-enter {
+    opacity: 0;
+    transform: translateY(0.5rem);
+}
+
+.content-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms, transform 500ms;
 }
