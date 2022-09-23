@@ -3,14 +3,13 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Main from './components/Main';
 import Works from './components/Works'
+import Banner from './components/Banner'
 // react-router
 import {
     BrowserRouter as Router,
     Routes,
     Route,
 } from "react-router-dom";
-//art 
-import art from './images/arttt.svg'
 
 function App() {
     return (
@@ -18,11 +17,7 @@ function App() {
             <Router>
                 <NavBar />
 
-                    {/* <div className="main-wrap">
-                        <div className='art'>
-                            <img src={art} alt="art" />
-                        </div>
-                    </div> */}
+                <Banner />
 
                 <Routes>
                     <Route path='/' element={ <Main /> }/>

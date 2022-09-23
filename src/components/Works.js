@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react'
 //css
 import './Works.css'
 //images
-import art from '../images/arttt.svg'
 import img from '../images/test.png'
 //components
 import Footer from './Footer'
@@ -22,12 +21,6 @@ const Works = () => {
         <div className='works'>
 
             <main>
-
-                <div className="main-wrap">
-                    <div className='art'>
-                        <img src={art} alt="art" />
-                    </div>
-                </div>
 
                 <CSSTransition nodeRef={mainRef} in={loaded} timeout={500} classNames='content-transition'>
                     <div ref={mainRef}>

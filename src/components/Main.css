@@ -3,16 +3,6 @@
     justify-content: center;
 }
 
-.art {
-    display: flex;
-    justify-content: center;
-    margin: 0.8rem 0;
-}
-
-.art img {
-    width: 100%;
-}
-
 .hello {
     width: 100%;
 

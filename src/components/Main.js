@@ -5,7 +5,6 @@ import Footer from './Footer.js'
 import './Main.css'
 //images
 import me from '../images/Stuzkovani22.png'
-import art from '../images/arttt.svg'
 //link
 import { Link } from 'react-router-dom'
 //transition
@@ -25,12 +24,6 @@ function Main() {
         <div className='main'>
         
             <main>
-                
-                <div className="main-wrap">
-                    <div className='art'>
-                        <img src={art} alt="art" />
-                    </div>
-                </div>
 
                 <CSSTransition nodeRef={helloRef} in={loaded} timeout={500} classNames='hello-transition'>
                     <div ref={helloRef}>
