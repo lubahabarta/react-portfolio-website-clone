@@ -8,13 +8,22 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-  } from "react-router-dom";
+} from "react-router-dom";
+//art 
+import art from './images/arttt.svg'
 
 function App() {
     return (
         <div className='app'>
             <Router>
                 <NavBar />
+
+                    {/* <div className="main-wrap">
+                        <div className='art'>
+                            <img src={art} alt="art" />
+                        </div>
+                    </div> */}
+
                 <Routes>
                     <Route path='/' element={ <Main /> }/>
                     <Route path='/portfolio' element={ <Works /> }/>
