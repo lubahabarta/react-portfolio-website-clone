@@ -26,7 +26,7 @@ article {
 }
 
 section {
-    margin-bottom: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .article-button {
@@ -87,21 +87,27 @@ section.work>p {
     text-indent: 1rem;
 }
 
-/* BIO */
-section.bio>p {
-    margin-left: 3.3rem;
-    text-indent: -3.3rem;
-}
-
-section.bio>p>span {
-    font-weight: bold;
-    margin-right: 1rem;
-}
-
 /* HOBBY */
 section.hobby>p {
     text-align: justify;
     text-indent: 1rem;
+}
+
+/* I LIKE */
+section.like>p {
+    text-align: justify;
+    text-indent: 1rem;
+}
+
+/* SKILLS */
+section.skills p {
+    margin-left: 2.85rem;
+    text-indent: -2.85rem;
+}
+
+section.skills span {
+    font-weight: bold;
+    margin-right: 1.5rem;
 }
 
 /* ON THE WEB */

@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-        <p>&copy; 2022 Takuya Matsuyama. All Rights Reserved.</p>
+        <p>&copy; 2022 Lubos Habarta</p>
     </div>
   )
 }

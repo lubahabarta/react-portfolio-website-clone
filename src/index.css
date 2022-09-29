@@ -6,6 +6,8 @@
     --nav-color: var(--dark-mode-nav-color);
     --menu-border-color: var(--dark-mode-menu-border-color);
     --menu-hover-color: var(--dark-mode-menu-hover-color);
+    --hidden-menu-bg-color: var(--dark-mode-hidden-menu-bg-color);
+    --hidden-menu-hover-color: var(--dark-mode-hidden-menu-hover-color);
     --link-color: var(--dark-mode-link-color);
     --weblink-hover-color: var(--dark-mode-weblink-hover-color);
     --hello-color: var(--dark-mode-hello-color);
@@ -17,6 +19,8 @@
     --dark-mode-nav-color: #20202380;
     --dark-mode-menu-border-color: rgba(255, 255, 255, 0.2);
     --dark-mode-menu-hover-color: rgba(255, 255, 255, 0.09);
+    --dark-mode-hidden-menu-bg-color: #2d3748;
+    --dark-mode-hidden-menu-hover-color: rgba(255, 255, 255, 0.05);
     --dark-mode-link-color: #ff63c3;
     --dark-mode-weblink-hover-color: rgba(129, 230, 217, 0.12);
     --dark-mode-hello-color: rgba(255, 255, 255, 0.09);
@@ -28,6 +32,8 @@
     --light-mode-nav-color: rgba(255, 255, 255, 0.25);
     --light-mode-menu-border-color: #e2e8f0;
     --light-mode-menu-hover-color: #edf2f7;
+    --light-mode-hidden-menu-bg-color: #ffffff;
+    --light-mode-hidden-menu-hover-color: #ffffff;
     --light-mode-link-color: rgb(61, 122, 237);
     --light-mode-weblink-hover-color: #e6fffa;
     --light-mode-hello-color: rgba(255, 255, 255, 0.25);

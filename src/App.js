@@ -20,8 +20,9 @@ function App() {
                 <Banner />
 
                 <Routes>
-                    <Route path='/' element={ <Main /> }/>
+                    <Route exact path='/' element={ <Main /> }/>
                     <Route path='/portfolio' element={ <Works /> }/>
+                    <Route path='/*' element={ <a href='/'>404 Page not found</a> }/>
                 </Routes>
             </Router>
         </div>

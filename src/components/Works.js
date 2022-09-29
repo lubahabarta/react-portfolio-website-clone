@@ -2,7 +2,9 @@ import React, { useState, useEffect, useRef } from 'react'
 //css
 import './Works.css'
 //images
-import img from '../images/test.png'
+import cookieClicker from '../images/cookie-clicker.png'
+import listApp from '../images/list_app.png'
+import infoApp from '../images/info_app.png'
 //components
 import Footer from './Footer'
 //transition
@@ -32,34 +34,26 @@ const Works = () => {
 
                                     <ul>
                                         <li>
-                                            <a href="#">
-                                                <img src={img} alt="img" />
-                                                <h4>Inkdrop</h4>
-                                                <p>A Markdown note-taking app with 100+ plugins, cross-platform and encrypted data sync support</p>
+                                            <a href="https://luba-react-cookie-clicker.netlify.app/" target='blank'>
+                                                <img src={cookieClicker} alt="cookie clicker image" />
+                                                <h4>react-cookie-clicker</h4>
+                                                <p>Základní práce se statem v Reactu.</p>
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="#">
-                                                <img src={img} alt="img" />
-                                                <h4>walknote</h4>
-                                                <p>Music recommendation app for iOS</p>
+                                            <a href="https://luba-react-list-app.netlify.app/" target='blank'>
+                                                <img src={listApp} alt="list app image" />
+                                                <h4>react-list-app</h4>
+                                                <p>Práce s inputem v Reactu.</p>
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="#">
-                                                <img src={img} alt="img" />
-                                                <h4>Inkdrop</h4>
-                                                <p>A Markdown note-taking app with 100+ plugins, cross-platform and encrypted data sync support</p>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <img src={img} alt="img" />
-                                                <h4>walknote</h4>
-                                                <p>Music recommendation app for iOS</p>
+                                            <a href="https://luba-react-tsc-info-app.netlify.app/" target='blank'>
+                                                <img src={infoApp} alt="info app image" />
+                                                <h4>react-tsc-info-app</h4>
+                                                <p>Na této aplikaci jsem si vyzkoušel trochu TypeScriptu a data fetch.</p>
                                             </a>
                                         </li>
                                     </ul>
