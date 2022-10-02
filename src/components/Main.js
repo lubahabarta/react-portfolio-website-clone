@@ -74,7 +74,7 @@ function Main() {
 
                                 <section className='hobby'>
                                     <h3>Hobby &#127912;</h3>
-                                    <p>Programování, Cestování, Filmy, Jídlo, Fitness, Fotbal, Volejbal, 24/7 Chill</p>
+                                    <p>Programování, Cestování, Hudba, Filmy, Jídlo, Fitness, Fotbal, Volejbal</p>
                                 </section>
 
                                 {/* <section className='like'>
