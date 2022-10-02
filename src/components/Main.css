@@ -112,16 +112,18 @@ section.skills span {
 
 section.skills>div {
     display: flex;
+    flex-direction: column;
     padding-left: 1rem;
 }
 
 section.skills>div span {
     font-weight: bold;
-    flex: 2;
+    /* flex: 2; */
 }
 
 section.skills>div p {
-    flex: 5;
+    /* flex: 5; */
+    padding-left: 1rem;
 }
 
 /* ON THE WEB */
@@ -173,5 +175,20 @@ section.on-the-web svg {
     section.who img {
         position: relative;
         top: -0.8rem;
+    }
+
+    /* SKILLS */
+    section.skills>div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section.skills>div span {
+        flex: 2;
+    }
+
+    section.skills>div p {
+        flex: 5;
+        padding-left: 0;
     }
 }
