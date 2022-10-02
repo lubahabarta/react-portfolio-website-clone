@@ -100,7 +100,7 @@ section.like>p {
 }
 
 /* SKILLS */
-section.skills p {
+/* section.skills p {
     margin-left: 2.85rem;
     text-indent: -2.85rem;
 }
@@ -108,6 +108,20 @@ section.skills p {
 section.skills span {
     font-weight: bold;
     margin-right: 1.5rem;
+} */
+
+section.skills>div {
+    display: flex;
+    padding-left: 1rem;
+}
+
+section.skills>div span {
+    font-weight: bold;
+    flex: 2;
+}
+
+section.skills>div p {
+    flex: 5;
 }
 
 /* ON THE WEB */

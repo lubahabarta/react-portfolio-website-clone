@@ -12,6 +12,17 @@ import { CSSTransition } from 'react-transition-group'
 
 function Main() {
 
+    const [skills, setSkills] = useState([
+        { id: 1, skill: 'html', description: 'Znám základní elementy, ne však moc do hloubky.' },
+        { id: 2, skill: 'css', description: 'Jsem schopen vytvořit responzivní web (Flex, Grid, @media screen...)'},
+        { id: 3, skill: 'es6+', description: 'Moje nejoblíbenější technologie. \u2665'},
+        { id: 4, skill: 'React', description: 'V Reactu se pohybuju zatím asi jen 2 měsíce.'},
+        { id: 5, skill: '( TypeScript )', description: ''},
+        { id: 6, skill: '( Tailwindcss )', description: ''},
+        { id: 7, skill: 'Photoshop', description: ''},
+        { id: 8, skill: 'Illustrator', description: ''}
+    ]);
+
     const [loaded, setLoaded] = useState(false);
     const helloRef = useRef(null);
     const articleRef = useRef(null);
@@ -73,7 +84,7 @@ function Main() {
 
                                 <section className="skills">
                                     <h3>Skills &#128187;</h3>
-                                    <p><span>html</span>Znám základní elementy, ne však moc do hloubky.</p>
+                                    {/* <p><span>html</span>Znám základní elementy, ne však moc do hloubky.</p>
                                     <p><span>css</span>Jsem schopen vytvořit responzivní web (Flex, Grid, @media screen...)</p>
                                     <p><span>es6+</span>Moje nejoblíbenější technologie. &hearts;</p>
                                     <p><span>React</span>V Reactu se pohybuju zatím asi jen 2 měsíce.</p>
@@ -81,7 +92,13 @@ function Main() {
                                     <p><span>( Tailwindcss )</span></p>
                                     <p><span>C#</span>Ze Střední školy jsem si odnesl základy OOP.</p>
                                     <p><span>Photoshop</span></p>
-                                    <p><span>Illustrator</span></p>
+                                    <p><span>Illustrator</span></p> */}
+
+                                    { skills.map(skill => (
+                                        <div key={skill.id}>
+                                            <span>{skill.skill}</span><p>{skill.description}</p>
+                                        </div>
+                                    ))}
                                 </section>
 
                                 <section className='on-the-web'>
