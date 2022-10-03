@@ -5,6 +5,7 @@ import './Works.css'
 import cookieClicker from '../images/cookie-clicker.png'
 import listApp from '../images/list_app.png'
 import infoApp from '../images/info_app.png'
+import timer from '../images/timer.png'
 //components
 import Footer from './Footer'
 //transition
@@ -45,7 +46,7 @@ const Works = () => {
                                             <a href="https://luba-react-list-app.netlify.app/" target='blank'>
                                                 <img src={listApp} alt="list app image" />
                                                 <h4>react-list-app</h4>
-                                                <p>Práce s inputem v Reactu.</p>
+                                                <p>Input v Reactu.</p>
                                             </a>
                                         </li>
 
@@ -54,6 +55,14 @@ const Works = () => {
                                                 <img src={infoApp} alt="info app image" />
                                                 <h4>react-tsc-info-app</h4>
                                                 <p>Na této aplikaci jsem si vyzkoušel trochu TypeScriptu a data fetch.</p>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://luba-react-tsc-timer.netlify.app/" target='blank'>
+                                                <img src={timer} alt="timer app image" />
+                                                <h4>react-tsc-timer</h4>
+                                                <p>Nedokončený timer v Reactu a TypeScriptu.</p>
                                             </a>
                                         </li>
                                     </ul>
