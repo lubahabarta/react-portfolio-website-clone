@@ -6,6 +6,7 @@ import cookieClicker from '../images/cookie-clicker.png'
 import listApp from '../images/list_app.png'
 import infoApp from '../images/info_app.png'
 import timer from '../images/timer.png'
+import firebase from '../images/firebase.png'
 //components
 import Footer from './Footer'
 //transition
@@ -63,6 +64,14 @@ const Works = () => {
                                                 <img src={timer} alt="timer app image" />
                                                 <h4>react-tsc-timer</h4>
                                                 <p>Nedokončený timer v Reactu a TypeScriptu.</p>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://luba-react-firebase.netlify.app/" target='blank'>
+                                                <img src={firebase} alt="firebase app image" />
+                                                <h4>react-firebase</h4>
+                                                <p>Tady se učím firebase</p>
                                             </a>
                                         </li>
                                     </ul>
