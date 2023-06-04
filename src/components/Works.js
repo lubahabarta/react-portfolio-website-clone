@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from 'react'
 //css
 import './Works.css'
 //images
-import cookieClicker from '../images/cookie-clicker.png'
-import listApp from '../images/list_app.png'
-import infoApp from '../images/info_app.png'
+import cookieClicker from '../images/cookie-clicker.jpg'
+import listApp from '../images/list-app.jpg'
+import infoApp from '../images/info-app.jpg'
 import timer from '../images/timer.png'
-import firebase from '../images/firebase.png'
+import firebase from '../images/firebase.jpg'
 //components
 import Footer from './Footer'
 //transition
@@ -59,13 +59,13 @@ const Works = () => {
                                             </a>
                                         </li>
 
-                                        <li>
+                                        {/* <li>
                                             <a href="https://luba-react-tsc-timer.netlify.app/" target='blank'>
                                                 <img src={timer} alt="timer app image" />
                                                 <h4>react-tsc-timer</h4>
                                                 <p>Nedokončený timer v Reactu a TypeScriptu.</p>
                                             </a>
-                                        </li>
+                                        </li> */}
 
                                         <li>
                                             <a href="https://luba-react-firebase.netlify.app/" target='blank'>
